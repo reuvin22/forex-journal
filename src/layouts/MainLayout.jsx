@@ -1,10 +1,10 @@
-import React from 'react'
 import Login from '../pages/Login'
+import DashboardLayout from './DashboardLayout'
 
 function MainLayout() {
   return (
-    <div>
-        <Login />
+    <div className='bg-slate-100'>
+        <DashboardLayout />
     </div>
   )
 }

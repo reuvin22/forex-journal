@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from '../hooks/Form';
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
@@ -16,7 +17,9 @@ function Login() {
                             <div className="grid gap-3 place-items-center p-6">
                                 <Form text="Username" label="Username" />
                                 <Form password="Password" label="Password" />
-                                <button className='cursor-pointer border py-2 px-28 hover:bg-green-400 hover:text-white rounded'>Login</button>
+                                <Link to='/dashboard'>
+                                    <button className='cursor-pointer border py-2 px-28 hover:bg-green-400 hover:text-white rounded'>Login</button>
+                                </Link>
                                 <div className='flex justify-center items-center'>
                                     <span className='cursor-pointer hover:text-green-800'>Forgot Password?</span>
                                 </div>
